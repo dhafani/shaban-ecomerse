@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-
+        scale=1.0">
+       <title>Accounts</title>
+       <link rel="stylesheet" href="style.css">
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font- awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+<body>
+    
+     <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="140px"  height="120px"> </a> 
+               </div>
+               <nav>
+                   <ul id="MenuItems">
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="product.html">Product</a></li>
+                       <li><a href="aboutus.html">About</a></li>
+                       <li><a href="contact.html">contact</a></li>
+                       <li><a href="account.html">Account</a></li>
+                   </ul>
+               </nav>
+              <a href="cart.html"> <img src="img/cart.png" width="30px" height="30px"></a>
+               <img src="img/menu icon.png" class="menu-icon"
+               onclick="menutoggle()">
+           </div>       
+     </div>
+
+<!--account page--> 
+
+<div class="account-page"  background: radial-gradient="#fff #ff523b" background="#ff523b">
+    <div class="container">
+        <div class="row">
+
+             <div class="container">
+              <form id="loginForm">
+                  <h2>Login</h2>
+                  <label for="loginUsername">Username:</label>
+                  <input type="text" id="loginUsername" name="username" required>
+      
+                  <label for="loginPassword">Password:</label>
+                  <input type="password" id="loginPassword" name="password" required>
+      
+                  <button type="button" onclick="login()">Login</button>
+              </form>
+      
+              <hr>
+      
+              <form id="registrationForm">
+                  <h2>Register</h2>
+                  <label for="registerUsername">Username:</label>
+                  <input type="text" id="registerUsername" name="username" required>
+      
+                  <label for="registerPassword">Password:</label>
+                  <input type="password" id="registerPassword" name="password" required>
+      
+                  <button type="button" onclick="register()">Register</button>
+              </form>
+          </div>
+      
+          <script src="script.js"></script
+        </div>
+    </div>
+</div>
+
+
+
+<!--footer-->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download Our app</h3>
+        <p>Download App for Android and ios mobile phone</p>
+        <div class="app-logo">
+          <img src="img/app play.png" >
+
+        </div>
+      </div>
+      <div class="footer-col-2">
+        <img src="img/logo.png" >
+        <p>Our Purpose Is To Sustainably Make the pleasure
+          and Benefit of Electrical Accessible to the Many.
+        </p>
+      </div>
+      <div class="footer-col-3">
+        <h3>useful links</h3>
+        <ul>
+          <li>coupons</li>
+          <li>blog post</li>
+          <li>Return policy</li>
+          <li>Join Affiliate</li>
+        </ul>
+      </div> 
+      <div class="footer-col-4">
+        <h3>Follow us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+        </ul>
+      </div> 
+    </div>
+    <hr>
+    <p class="copyright">copyright 2023-Easy Tutorials</p>
+  </div>
+</div>
+<!--js for toggle menu-->
+<script>
+  var MenuItems = document.getElementById("MenuItems");
+
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle(){
+    if(MenuItems.style.maxHeight == "0px")
+        {
+           MenuItems.style.maxHeight = "200px";
+        }
+     else
+        {
+          MenuItems.style.maxHeight = "0px";
+        }
+  }
+</script>
+
+<!--js for toggle form-->
+
+
+</body>
+</html>
